@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="./assignment3.css">
+</head>
+<body>
+
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+
+        <label>Student Name</label><br>
+        <input type="text" id="name">
+        <div class="error" id="nameError"></div>
+
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" id="email">
+        <div class="error" id="emailError"></div>
+
+        <br><br>
+
+        <label>Course</label><br>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>Web Development</option>
+            <option>C++</option>
+        </select>
+        <div class="error" id="courseError"></div>
+
+        <br><br>
+
+        <label>Feedback</label><br>
+        <textarea id="feedback"></textarea>
+        <div class="error" id="feedbackError"></div>
+
+        <br><br>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="button" id="deleteBtn">Delete Stored Data</button>
+
+    </form>
+
+    <hr>
+
+    <h3>Stored Feedback</h3>
+
+    <div id="storedData">
+        No feedback stored.
+    </div>
+
+    <br>
+
+    <h3 id="sessionUser"></h3>
+
+    <script src="./assignment3.js"></script>
+
+</body>
+</html>
