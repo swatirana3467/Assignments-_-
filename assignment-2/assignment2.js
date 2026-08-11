@@ -1,4 +1,3 @@
-// Initial Array
 const students = [
   { id: 101, name: "Aman", marks: 82, course: "Java" },
   { id: 102, name: "Priya", marks: 95, course: "Python" },
