@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Exam Result</title>
+</head>
+<body>
+
+    <h1>Online Exam Result</h1>
+
+    <button onclick="checkResult()">Check Result</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function calculateResult() {
+            return new Promise((resolve) => {
+
+                setTimeout(() => {
+                    resolve("Your result is ready! You scored 85 marks.");
+                }, 3000);
+
+            });
+        }
+
+        async function checkResult() {
+
+            document.getElementById("result").innerText =
+                "Calculating your result...";
+
+            let result = await calculateResult();
+
+            document.getElementById("result").innerText = result;
+        }
+
+    </script>
+
+</body>
+</html>
